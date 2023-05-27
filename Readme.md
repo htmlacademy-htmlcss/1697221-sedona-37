@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Оксана Тарасова](https://up.htmlacademy.ru/htmlcss/37/user/1697221).
-* Наставник: `Ирина Антипина` (https://htmlacademy.ru/profile/id2108789).
+* Наставник: [Ирина Антипина] (https://htmlacademy.ru/profile/id2108789).
 
 ---
 
