@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
@@ -107,9 +107,7 @@ body {
 }
 
 .hero {
-  height: 485px;
-  background: url("../images/hero-border.svg") no-repeat center bottom, url("../images/hero-background.jpg") no-repeat left center;
-  background-color: #7d96a7;
+  background: url("../images/hero-border.svg") no-repeat center bottom, url("../images/hero-background.jpg") no-repeat left center #7d96a7;
   text-align: center;
 }
 
@@ -224,17 +222,7 @@ body {
 
 .main-index .subscribe {
   color: #ffffff;
-  background-color: #82b3d3;
-  background: url("../images/subscribe-background.jpg") no-repeat;
-}
-
-.social-link {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
+  background: url("../images/subscribe-background.jpg") no-repeat #82b3d3;
 }
 
 .contacts-address-phone {
@@ -247,8 +235,7 @@ body {
 
 .hotel-filters {
   color: #ffffff;
-  background-color: #82b3d3;
-  background: url("../images/catalog-background.jpg") no-repeat;
+  background: url("../images/catalog-background.jpg") no-repeat  #82b3d3;
 }
 
 .inner-header-title {
@@ -278,16 +265,6 @@ body {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-.represent-link {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  text-decoration: none;
-  text-align: center;
-  color: #000000;
-
 }
 
 .hotel-card-title {
