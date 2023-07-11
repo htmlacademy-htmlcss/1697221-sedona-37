@@ -26,8 +26,8 @@ html {
 
 body {
   width: 1280px;
-  margin: 0 auto;
   height: 100%;
+  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -170,16 +170,16 @@ body {
 }
 
 .navigation {
-  display: flex;
   position: relative;
+  display: flex;
   padding-left: 168px;
 }
 
 .logo-sedona-link {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
+  display: block;
 }
 
 .logo-sedona-link:hover {
@@ -214,8 +214,8 @@ body {
 }
 
 .navigation-link {
-  display: block;
   position: relative;
+  display: block;
   padding: 20px 16px;
   font-size: 20px;
   line-height: 24px;
@@ -245,12 +245,12 @@ body {
 }
 
 .current-link::after {
-  content: "";
   position: absolute;
-  height: 2px;
   left: 16px;
   right: 16px;
   bottom: 0;
+  content: "";
+  height: 2px;
   background-color: #756257;
 }
 
@@ -258,6 +258,7 @@ body {
   justify-content: flex-end;
   max-width: 268px;
   margin-left: auto;
+  align-items: flex-start;
 }
 
 .navigation-user .navigation-link {
@@ -266,8 +267,7 @@ body {
 }
 
 .navigation-button {
-  align-self: center;
-  padding-left: 20px;
+  padding: 14px 0 14px 20px;
 }
 
 .want-button {
@@ -279,14 +279,14 @@ body {
 
 .favourites {
   position: absolute;
+  left: 20px;
+  top: 11px;
   padding: 5px;
   font-size: 10px;
   line-height: 10px;
   color: #ffffff;
   background-color: #7db54f;
   border-radius: 50%;
-  left: 20px;
-  top: 11px;
 }
 
 .navigation-icon {
@@ -620,14 +620,14 @@ body {
 }
 
 .social-icon {
-  fill: #83b3d3;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-}
+  fill: #83b3d3;
+ }
 
 .social-link:hover .social-icon {
   fill: #68a2ca;
@@ -762,10 +762,6 @@ body {
   background-position: 0 center;
 }
 
-.breadcrumbs-item {
-  margin-right: 4px;
-}
-
 .breadcrumbs-item:not(:first-child)::before {
   content: url("../images/icons/breadcrumbs.svg");
   margin-right: 10px;
@@ -842,15 +838,15 @@ body {
 
 .control-mark {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: #ffffff;
   left: 0;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
 }
 
 .control-input:hover + .control-mark,
@@ -931,11 +927,11 @@ body {
 
 .price-text {
   position: absolute;
+  right: 20px;
+  top: 12px;
   color: #000000;
   line-height: 24px;
   opacity: 0.3;
-  right: 20px;
-  top: 12px;
 }
 
 .range-scale {
@@ -1096,7 +1092,7 @@ body {
   display: block;
   min-width: 48px;
   min-height: 48px;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #e5e5e5;
   border-radius: 4px;
 }
 
@@ -1119,33 +1115,33 @@ body {
 }
 
 .represent-current {
-  border-color: #000000;
+  outline: #000000;
 }
 
 .represent-link:hover {
-  border-color: #000000;
+  outline: #000000;
 }
 
 .represent-link:focus {
-  border-color: #68a2ca;
+  outline: #68a2ca;
 }
 
 .represent-link:active {
-  border-color: #000000;
+  outline: #000000;
 }
 
 .represent-link.disabled {
   opacity: 0.1;
   cursor: default;
   outline: none;
-  border-color: #000000;
+  outline: #000000;
 }
 
 /* Hotel cards */
 
 .hotel-card-list {
   display: grid;
-  grid-template-columns: repeat(3, 340px);
+  grid-template-columns: repeat(auto-fill, 340px);
   gap: 20px;
   padding: 0;
   padding-bottom: 41px;
@@ -1280,7 +1276,6 @@ body {
   background-repeat: repeat-x;
   background-position: 0 center;
   font-size: 24px;
-  /*1em = 24px*/
   background-size: 1em auto;
 }
 
@@ -1380,15 +1375,15 @@ body {
   position: fixed;
   left: 0;
   top: 0;
+  display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.80);
-  display: flex;
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -1401,6 +1396,9 @@ body {
 }
 
 .modal-close-button {
+  position: absolute;
+  right: 52px;
+  top: 64px;
   display: block;
   width: 52px;
   height: 52px;
@@ -1408,9 +1406,6 @@ body {
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
-  position: absolute;
-  right: 52px;
-  top: 64px;
 }
 
 .close-icon {
@@ -1542,8 +1537,8 @@ body {
 }
 
 .icon-space {
-  display: block;
   position: relative;
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -1657,17 +1652,17 @@ body {
   display: none;
 }
 
-.tooltip-text:after {
+.tooltip-text::after {
   content: '';
-  background-image: url("../images/icons/tooltip-triangle.svg");
-  width: 19px;
-  height: 9px;
   position: absolute;
   bottom: 100%;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  background-image: url("../images/icons/tooltip-triangle.svg");
+  width: 19px;
+  height: 9px;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
