@@ -584,15 +584,13 @@ body {
 .page-footer {
   display: flex;
   background-color: #ffffff;
-  padding: 47px 70px 30px;
-  justify-content: space-between;
-}
+  padding: 47px 70px 30px;}
 
 /* Social  */
 
 .footer-social {
   width: 250px;
-  margin-right: -107px;
+  margin-right: 34px;
 }
 
 .social-list {
@@ -637,6 +635,7 @@ body {
 .footer-contacts {
   width: 520px;
   text-align: center;
+  margin-right: auto;
 }
 
 .contacts-address-phone {
@@ -1096,17 +1095,17 @@ body {
 
 .catalog-filter-group:nth-child(1) {
   width: 150px;
-  margin-right: 66px;
+  margin-right: 67px;
 }
 
 .catalog-filter-group:nth-child(2) {
   width: 150px;
-  margin-right: auto;
+  margin-right: 141px;
 }
 
 .catalog-filter-group:nth-child(3) {
   width: 288px;
-  margin-right: 70px;
+  margin-right: auto;
 }
 
 .catalog-filter-list {
@@ -1119,7 +1118,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
-  margin-bottom: 34px;
+  margin-bottom: 33px;
   text-transform: capitalize;
 }
 
@@ -1171,7 +1170,7 @@ body {
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/tick/checkbox.svg");
   background-repeat: no-repeat;
-  background-position: left 4px top 5px;
+  background-position: left 4px top 7px;
 }
 
 .control-input[type="radio"] + .control-mark {
