@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <title>Гостиницы</title>
     <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -16,7 +17,7 @@
 
         <nav class="navigation">
 
-          <a class="logo-sedona-link" href="index.html">
+          <a class="logo-sedona-link inner-sedona-logo" href="index.html">
             <img class="logo-sedona" src="images/logo/sedona-logo.svg" width="140" height="70"
               alt="Перейти на главную страницу сайта.">
           </a>
@@ -76,7 +77,7 @@
 
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">
+                <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
                   <span class="visually-hidden">Главная.</span>
                 </a>
               </li>
@@ -148,11 +149,11 @@
                 <div class="range-inputs-wrapper">
                   <label class="range-label">
                     <span class="price-text">от</span>
-                    <input class="field range-input min-range-input" type="number" value="0">
+                    <input class="field range-input min-range-input" name="min-price" type="number" value="0">
                   </label>
                   <label class="range-label">
                     <span class="price-text">до</span>
-                    <input class="field range-input max-range-input" type="number" value="9000">
+                    <input class="field range-input max-range-input" name="max-price" type="number" value="9000">
                   </label>
                 </div>
 
@@ -194,17 +195,17 @@
 
             <ul class="represent-list">
               <li class="represent-item">
-                <a class="represent-link represent-current" href="#">
+                <a class="represent-link represent-type-tile represent-current" href="#">
                   <span class="visually-hidden">Показать плитку.</span>
                 </a>
               </li>
               <li class="represent-item">
-                <a class="represent-link" href="#">
+                <a class="represent-link represent-type-slideshow" href="#">
                   <span class="visually-hidden">Показать слайд.</span>
                 </a>
               </li>
               <li class="represent-item">
-                <a class="represent-link" href="#">
+                <a class="represent-link represent-type-list" href="#">
                   <span class="visually-hidden">Показать список.</span>
                 </a>
               </li>
