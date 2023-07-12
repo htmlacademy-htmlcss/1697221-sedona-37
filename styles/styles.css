@@ -338,6 +338,7 @@ body {
 
 .greeting-description {
   margin: 0;
+  margin-bottom: 21px;
   font-size: 22px;
   line-height: 26px;
   color: #333333;
@@ -356,7 +357,7 @@ body {
 
 .advantage-item {
   width: 400px;
-  padding: 112px 85px;
+  padding: 113px 85px;
 }
 
 .advantage-item:nth-child(2n) {
@@ -426,7 +427,7 @@ body {
 /* Invitation */
 
 .invitation {
-  padding: 64px 348px;
+  padding: 63px 348px;
   text-align: center;
 }
 
@@ -459,7 +460,7 @@ body {
 
 .recomendation-item {
   width: 400px;
-  padding: 183px 85px 81px;
+  padding: 184px 85px 81px;
 }
 
 .recomendation-item:nth-child(odd) {
@@ -594,7 +595,7 @@ body {
 .page-footer {
   display: flex;
   background-color: #ffffff;
-  padding: 40px 70px 30px;
+  padding: 47px 70px 30px;
   justify-content: space-between;
 }
 
@@ -602,6 +603,7 @@ body {
 
 .footer-social {
   width: 150px;
+  margin: -7px;
 }
 
 .social-list {
@@ -651,38 +653,12 @@ body {
   fill: #68a2ca;
 }
 
-/* Designed by */
-
-.footer-designed {
-  width: 115px;
-}
-
-.designed-link {
-  display: block;
-  color: #000000;
-}
-
-.designed-link:hover {
-  color: #756157;
-}
-
-.designed-link:focus {
-  color: #756157;
-}
-
-.designed-link:active {
-  color: rgba(117, 97, 87, 0.3)
-}
-
-.designed-link.disabled {
-  opacity: 0.1;
-  color: #000000;
-  cursor: default;
-  outline: none;
-}
-
-
 /* Phone */
+
+.footer-contacts {
+  width: 720px;
+  text-align: center;
+}
 
 .contacts-address-phone {
   font-size: 40px;
@@ -705,6 +681,37 @@ body {
 }
 
 .contacts-address-phone.disabled {
+  opacity: 0.1;
+  color: #000000;
+  cursor: default;
+  outline: none;
+}
+
+/* Designed by */
+
+.footer-designed {
+  width: 115px;
+  padding-top: 3px;
+}
+
+.designed-link {
+  display: block;
+  color: #000000;
+}
+
+.designed-link:hover {
+  color: #756157;
+}
+
+.designed-link:focus {
+  color: #756157;
+}
+
+.designed-link:active {
+  color: rgba(117, 97, 87, 0.3)
+}
+
+.designed-link.disabled {
   opacity: 0.1;
   color: #000000;
   cursor: default;
@@ -1626,7 +1633,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding-bottom: 60px;
+  padding: 0;
   list-style-type: none;
 }
 
