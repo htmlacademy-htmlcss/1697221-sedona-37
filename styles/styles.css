@@ -235,7 +235,7 @@ body {
   position: absolute;
   left: 16px;
   right: 16px;
-  bottom: 0;
+  bottom: -1px;
   content: "";
   height: 2px;
   background-color: #756257;
@@ -584,7 +584,8 @@ body {
 .page-footer {
   display: flex;
   background-color: #ffffff;
-  padding: 47px 70px 30px;}
+  padding: 47px 70px 30px;
+}
 
 /* Social  */
 
@@ -825,15 +826,25 @@ body {
 
 .button-wrapper {
   display: flex;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  ;
 }
 
 .quantity-button {
   width: 40px;
   height: 48px;
-  padding: 14px 10px;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
+}
+
+.minus-button,
+.plus-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
 }
 
 .minus-button {
@@ -844,41 +855,40 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.icon-space {
-  position: relative;
+.minus-button::after,
+.plus-button::after {
+  content: '';
   display: block;
-  width: 100%;
-  height: 100%;
+  width: 20px;
+  height: 20px;
+  mask: url("../images/icons/minus.svg") no-repeat center;
+  -webkit-mask: url("../images/icons/minus.svg") no-repeat center;
+  background-color: rgba(117, 97, 87, 0.30);
   border-radius: 4px;
 }
 
-.minus-plus-icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+.plus-button::after {
+  mask: url("../images/icons/plus.svg") no-repeat center;
+  -webkit-mask: url("../images/icons/plus.svg") no-repeat center;
 }
 
-.quantity-button .minus-plus-icon {
-  fill: rgba(117, 97, 87, 0.30);
-}
-
-.quantity-button:hover .minus-plus-icon {
-  fill: #000000;
+.minus-button:hover::after,
+.plus-button:hover::after {
+  background-color: #000000;
 }
 
 .quantity-button:focus {
   outline: none;
 }
 
-.quantity-button:focus .icon-space {
-  outline: 3px solid #82b3d3;
+.minus-button:focus::after,
+.plus-button:focus::after {
+  border: 3px solid #82b3d3;
 }
 
-.quantity-button:active .minus-plus-icon {
-  fill: #000000;
+.minus-button:active::after,
+.plus-button:active::after {
+  background-color: #000000;
   opacity: 0.2;
 }
 
@@ -887,8 +897,9 @@ body {
   cursor: default;
 }
 
-.quantity-button:disabled .minus-plus-icon {
-  fill: rgba(117, 97, 87, 0.30);
+.minus-button:disabled::after,
+.plus-button:disabled::after {
+  background-color: rgba(117, 97, 87, 0.30);
 }
 
 .tourists-quantity {
@@ -900,6 +911,7 @@ body {
 
 .tourists-quantity:focus {
   border: 3px solid #83b3d3;
+  border-radius: 4px;
   outline: none;
 }
 
@@ -1170,7 +1182,7 @@ body {
 .control-input[type="checkbox"]:checked + .control-mark {
   background-image: url("../images/tick/checkbox.svg");
   background-repeat: no-repeat;
-  background-position: left 4px top 7px;
+  background-position: left 4px top 6px;
 }
 
 .control-input[type="radio"] + .control-mark {
