@@ -139,13 +139,13 @@ body {
   font-size: 18px;
   line-height: 24px;
   background-color: #f2f2f2;
-  padding: 12px 20px;
+  padding: 9px 17px;
   font-weight: 700;
-  border: none;
+  border: 3px solid transparent;
 }
 
 .field:placeholder-shown {
-  color: rgba(0, 0, 0, 0.60)
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .field:hover {
@@ -154,7 +154,7 @@ body {
 
 .field:focus {
   background-color: #e6e6e6;
-  outline: 3px solid #83b3d3;
+  border: 3px solid #83b3d3;
 }
 
 .field:disabled {
@@ -261,7 +261,7 @@ body {
   width: 160px;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 34px;
+  padding: 8px 30px;
 }
 
 .favourites {
@@ -305,12 +305,14 @@ body {
 .hero-photo {
   display: block;
   margin: 0 auto;
+  width: 457px;
+  height: 352px;
 }
 
 /* Greeting */
 
 .greeting {
-  padding: 69px 250px;
+  padding: 70px 250px;
   text-align: center;
 }
 
@@ -405,13 +407,12 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .item-with-picture .advantage-title::after {
-  background-color: rgba(255, 255, 255, 0.30);
+  background-color: rgba(255, 255, 255, 0.3);
 }
-
 
 /* Invitation */
 
@@ -450,6 +451,9 @@ body {
 .recomendation-item {
   width: 400px;
   padding: 184px 85px 81px;
+  background-size: 75px 72px;
+  background-repeat: no-repeat;
+  background-position: 50% 81px;
 }
 
 .recomendation-item:nth-child(odd) {
@@ -472,23 +476,14 @@ body {
 
 .recomendation-housing {
   background-image: url("../images/recomendation/housing.svg");
-  background-size: 75px 72px;
-  background-repeat: no-repeat;
-  background-position: 50% 81px;
 }
 
 .recomendation-eating {
   background-image: url("../images/recomendation/eating.svg");
-  background-size: 74px 70px;
-  background-repeat: no-repeat;
-  background-position: 50% 82px;
 }
 
 .recomendation-souvenir {
   background-image: url("../images/recomendation/souvenir.svg");
-  background-size: 64px 76px;
-  background-repeat: no-repeat;
-  background-position: 50% 79px;
 }
 
 /* Hotel selection*/
@@ -657,7 +652,7 @@ body {
 }
 
 .contacts-address-phone:active {
-  color: rgba(117, 97, 87, 0.3)
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Designed by */
@@ -681,7 +676,7 @@ body {
 }
 
 .designed-link:active {
-  color: rgba(117, 97, 87, 0.3)
+  color: rgba(117, 97, 87, 0.3);
 }
 
 /* Modal */
@@ -693,7 +688,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  background-color: rgba(242, 242, 242, 0.80);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal-container-close {
@@ -712,8 +707,8 @@ body {
 
 .modal-close-button {
   position: absolute;
-  right: 51px;
-  top: 66px;
+  right: 52px;
+  top: 64px;
   display: block;
   width: 52px;
   height: 52px;
@@ -724,7 +719,12 @@ body {
 }
 
 .modal-close-button::after {
-  content: url("../images/icons/cross.svg");
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  background: url("../images/icons/cross.svg") no-repeat center;
 }
 
 .modal-close-button:hover {
@@ -759,7 +759,7 @@ body {
 .booking-form {
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 24px;
 }
 
 .booking-label {
@@ -775,7 +775,7 @@ body {
 }
 
 .modal-field:placeholder-shown {
-  color: rgba(0, 0, 0, 0.60);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .date-wrapper {
@@ -785,12 +785,13 @@ body {
 }
 
 .date-field {
+  padding-left: 16px;
   padding-right: 48px;
   border-radius: 4px;
   background-image: url("../images/icons/date.svg");
   background-size: 20px 20px;
   background-repeat: no-repeat;
-  background-position: right 22px center;
+  background-position: right 18px center;
 }
 
 .date-info {
@@ -828,23 +829,17 @@ body {
   display: flex;
   background-color: #f2f2f2;
   border-radius: 4px;
-  ;
 }
 
 .quantity-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 40px;
   height: 48px;
   background-color: #f2f2f2;
   border: none;
   cursor: pointer;
-}
-
-.minus-button,
-.plus-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px 0 0 4px;
 }
 
 .minus-button {
@@ -855,41 +850,21 @@ body {
   border-radius: 0 4px 4px 0;
 }
 
-.minus-button::after,
-.plus-button::after {
-  content: '';
-  display: block;
-  width: 20px;
-  height: 20px;
-  mask: url("../images/icons/minus.svg") no-repeat center;
-  -webkit-mask: url("../images/icons/minus.svg") no-repeat center;
-  background-color: rgba(117, 97, 87, 0.30);
-  border-radius: 4px;
-}
-
-.plus-button::after {
-  mask: url("../images/icons/plus.svg") no-repeat center;
-  -webkit-mask: url("../images/icons/plus.svg") no-repeat center;
-}
-
-.minus-button:hover::after,
-.plus-button:hover::after {
-  background-color: #000000;
+.quantity-button:hover .icon-plus-minus {
+  fill: #000000;
 }
 
 .quantity-button:focus {
   outline: none;
 }
 
-.minus-button:focus::after,
-.plus-button:focus::after {
-  border: 3px solid #82b3d3;
+.quantity-button:focus .icon-plus-minus {
+  outline: 3px solid #82b3d3;
+  border-radius: 4px;
 }
 
-.minus-button:active::after,
-.plus-button:active::after {
-  background-color: #000000;
-  opacity: 0.2;
+.quantity-button:active .icon-plus-minus {
+  fill: rgba(0, 0, 0, 0.2);
 }
 
 .quantity-button:disabled {
@@ -897,9 +872,8 @@ body {
   cursor: default;
 }
 
-.minus-button:disabled::after,
-.plus-button:disabled::after {
-  background-color: rgba(117, 97, 87, 0.30);
+.quantity-button:disabled .icon-plus-minus {
+  background-color: rgba(117, 97, 87, 0.3);
 }
 
 .tourists-quantity {
@@ -907,23 +881,20 @@ body {
   padding: 12px 2px;
   line-height: 20px;
   text-align: center;
+  border: 3px solid transparent;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .tourists-quantity:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
-  outline: none;
 }
 
 .tourists-quantity::-webkit-outer-spin-button,
 .tourists-quantity::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
-}
-
-.tourists-quantity {
-  appearance: none;
-  -moz-appearance: textfield;
 }
 
 .modal-search-button {
@@ -934,7 +905,7 @@ body {
   text-transform: uppercase;
   padding: 18px 77px;
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 .form-label-icon {
@@ -968,9 +939,9 @@ body {
   background-color: #333333;
   color: #ffffff;
   width: 256px;
-  padding: 20px 18px 18px 20px;
+  padding: 20px 18px 20px 20px;
   border-radius: 10px;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
   position: absolute;
   margin-top: 15px;
   transform: translateX(-50%) translateX(13px);
@@ -979,7 +950,7 @@ body {
 }
 
 .tooltip-text::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 100%;
   left: 0;
@@ -1029,7 +1000,7 @@ body {
 
 .hotel-filters {
   box-sizing: border-box;
-  padding: 35px 70px 70px;
+  padding: 35px 70px;
   color: #ffffff;
   background: url("../images/catalog-background.jpg") no-repeat #82b3d3;
   background-size: cover;
@@ -1097,6 +1068,7 @@ body {
 
 .catalog-filter {
   display: flex;
+  margin-bottom: 35px;
 }
 
 .catalog-filter-group {
@@ -1200,7 +1172,7 @@ body {
 
 .range-inputs-wrapper {
   display: flex;
-  margin-bottom: 42px;
+  margin-bottom: 44px;
 }
 
 .range-label {
@@ -1212,7 +1184,6 @@ body {
 .range-input {
   width: 143px;
   padding-right: 40px;
-  border: none;
 }
 
 .min-range-input {
@@ -1345,7 +1316,7 @@ body {
 .results-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 36px;
+  margin-bottom: 38px;
 }
 
 .results-text {
@@ -1455,7 +1426,7 @@ body {
   gap: 20px;
   padding: 0;
   padding-bottom: 41px;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
   list-style-type: none;
   border-bottom: 1px solid #e6e6e6;
 }
@@ -1566,11 +1537,12 @@ body {
 
 .rating {
   margin: 0;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 15px 8px 15px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   background-color: #f2f2f2;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -1636,7 +1608,7 @@ body {
 
 .pagination-clear {
   display: block;
-  min-width: 60px;
+  min-width: 58px;
   height: 60px;
   font-size: 22px;
   line-height: 26px;
