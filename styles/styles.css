@@ -298,7 +298,7 @@ body {
 
 .hero {
   padding: 51px 371px 82px;
-  background: url("../images/hero-border.svg") no-repeat center bottom-1px, url("../images/hero-background.jpg") no-repeat left center #7d96a7;
+  background: url("../images/hero-border.svg") no-repeat center bottom -1px, url("../images/hero-background.jpg") no-repeat left center #7d96a7;
   background-size: 100% auto, cover;
 }
 
