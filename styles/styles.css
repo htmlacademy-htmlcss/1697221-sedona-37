@@ -452,7 +452,6 @@ body {
   background-size: 75px 72px;
   background-repeat: no-repeat;
   background-position: 50% 81px;
-
 }
 
 .recomendation-item:nth-child(odd) {
@@ -690,9 +689,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .modal-container-close {
+.modal-container-close {
   display: none;
-} */
+}
 
 .modal {
   position: relative;
