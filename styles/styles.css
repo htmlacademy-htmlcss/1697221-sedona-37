@@ -261,7 +261,7 @@ body {
   width: 160px;
   font-size: 16px;
   line-height: 20px;
-  padding: 8px 34px;
+  padding: 8px 30px;
 }
 
 .favourites {
@@ -1535,11 +1535,12 @@ body {
 
 .rating {
   margin: 0;
-  padding: 9px 22px 8px 23px;
+  padding: 9px 15px 8px 15px;
   border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   background-color: #f2f2f2;
+  text-align: center;
   text-transform: uppercase;
 }
 
