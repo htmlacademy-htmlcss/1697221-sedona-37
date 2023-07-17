@@ -1435,6 +1435,7 @@ body {
 .hotel-card-item {
   display: grid;
   grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px 1fr;
   gap: 16px 20px;
   padding: 20px;
   color: #333333;
